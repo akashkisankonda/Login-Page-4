@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="strip" class="strip"></div>
+        <div class="main">
+            <div class="left">
+                <div class="left-content">
+                    <img src="Assets/droplet-solid.svg" height="100px" width="100" alt="" srcset="">
+                    <h2>CleanMyCar</h3>
+                        <p> <strong>Indias first water cleaning company</strong> </p>
+                </div>
+            </div>
+            <div class="right">
+                <p> <strong>Need Help?</strong> </p>
+                <form name="form" onsubmit="return validate()" action="" method="get">
+                    <small><span id="error"></span></small>
+                    <h4>Log in</h4>
+                    <div class="input">
+                        <label for="">Email</label>
+                        <input name="email" type="email" placeholder="">
+                    </div>
+                    <div class="input">
+                        <label for="">Password</label>
+                        <input name="password" type="password" placeholder="">
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                    <button type="submit">Login</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

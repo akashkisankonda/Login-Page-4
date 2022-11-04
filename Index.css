@@ -1,0 +1,175 @@
+body,
+html {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+}
+
+.main {
+    margin: auto;
+    height: 500px;
+    width: 80%;
+    display: flex;
+    z-index: 2;
+    box-shadow: 0px 0px 60px rgb(68, 65, 65);
+}
+
+.left {
+    width: 30%;
+    display: flex;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    position: relative;
+}
+
+.right p {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.holder {
+    position: relative;
+}
+
+.strip {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    padding: 20px;
+    width: 35%;
+    background-color: rgb(26, 235, 182);
+}
+
+.left-content {
+    text-align: center;
+    margin: auto;
+}
+
+.left-content h2 {
+    margin-bottom: 20px;
+}
+
+.right h4 {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.input {
+    padding: 10px 0 10px 0;
+}
+
+.input input {
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: medium;
+    margin: 7px 0 15px 0;
+}
+
+.input label {
+    display: block;
+}
+
+form {
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+
+form button {
+    display: block;
+    margin: auto;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: rgb(26, 235, 182);
+    margin-top: 40px;
+}
+
+form a {
+    display: block;
+    text-align: end;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        position: relative;
+    }
+
+    .main {
+        margin: auto;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        box-shadow: 0px 0px 60px rgb(68, 65, 65);
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .strip {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        padding: 20px;
+        width: 100%;
+        height: 35%;
+        background-color: rgb(26, 235, 182);
+    }
+}
+
+#error {
+    color: rgb(255, 94, 94);
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
